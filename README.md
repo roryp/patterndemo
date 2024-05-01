@@ -8,7 +8,7 @@ The project also includes automated tests using JUnit and Mockito, ensuring the 
 
 To manage the cache, the project employs various patterns such as cache-aside. The cache is implemented using the Caffeine library.
 
-For improving the system's reliability, the project uses resiliency patterns such as circuit breaker.
+For improving the system's reliability, the project uses resiliency patterns such as circuit breaker and retry.
 
 
 ## Installation
