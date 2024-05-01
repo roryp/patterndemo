@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.controller;
 
 import com.example.demo.controller.ProductController;
 import com.example.demo.service.ProductService;
