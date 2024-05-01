@@ -9,7 +9,7 @@ This project is a Java-based web application that provides a RESTful API for man
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
+git clone https://github.com/roryp/patterndemo.git
 ```
 
 2. Navigate to the project directory:
