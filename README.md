@@ -1,4 +1,4 @@
-# Project Name
+# Realiable Web App Demo
 
 ## Description
 
@@ -6,9 +6,9 @@ This project is a Java-based web application that provides a RESTful API for man
 
 The project also includes automated tests using JUnit and Mockito, ensuring the reliability and correctness of the application.
 
-To manage the cache, the project employs various patterns such as cache-aside, cache-aside with write-through, and cache-aside with write-behind. The cache is implemented using the Caffeine library.
+To manage the cache, the project employs various patterns such as cache-aside. The cache is implemented using the Caffeine library.
 
-For improving the system's reliability, the project uses resiliency patterns such as circuit breaker.
+For improving the system's reliability, the project uses resiliency patterns such as circuit breaker and retry.
 
 
 ## Installation
