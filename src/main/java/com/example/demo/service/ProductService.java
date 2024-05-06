@@ -42,8 +42,10 @@ public class ProductService {
     /**
      * Configures the circuit breaker test to simulate failures.
      * @param fail flag to activate or deactivate failure simulation.
+     * @return A statement regarding the failure mode status.
      */
     public void setFailForCircuitBreakerTest(boolean fail) {
         this.failForCircuitBreakerTest = fail;
     }
+}
 }
