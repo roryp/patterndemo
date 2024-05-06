@@ -48,4 +48,3 @@ public class ProductService {
         this.failForCircuitBreakerTest = fail;
     }
 }
-}
