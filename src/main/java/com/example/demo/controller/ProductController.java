@@ -53,4 +53,3 @@ public class ProductController {
         return "Failure mode is now set to: " + (fail ? "ON" : "OFF");
     }
 }
-}
