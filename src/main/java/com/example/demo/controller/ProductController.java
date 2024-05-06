@@ -12,20 +12,20 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Controller for product management within the application.
- * Provides REST endpoints for managing products.
+ * Controller for managing product-related operations within the application.
+ * Provides REST endpoints for managing products, including retrieval by ID and failure configuration.
  */
 @RestController
 public class ProductController {
 
     /**
-     * Service layer that handles business logic for product operations.
+     * The service layer that handles business logic for product operations. Injected via constructor.
      */
     private final ProductService productService;
 
     /**
      * Constructor for ProductController.
-     * @param productService Service to be injected, managing product-related operations.
+     * @param productService The service to be injected, managing product-related operations.
      */
     public ProductController(ProductService productService) {
         this.productService = productService;
@@ -33,8 +33,8 @@ public class ProductController {
 
     /**
      * Retrieves a product by its ID.
-     * @param id the ID of the product to retrieve.
-     * @return the retrieved product, cached for subsequent requests.
+     * @param id The ID of the product to retrieve.
+     * @return The retrieved product, cached for subsequent requests.
      */
     @GetMapping("/product/{id}")
     @Cacheable("products")
@@ -44,12 +44,13 @@ public class ProductController {
 
     /**
      * Endpoint to configure the failure mode of the application.
-     * @param fail boolean flag to turn on/off the failure mode.
-     * @return a string indicating the current state of the failure mode.
+     * @param fail Boolean flag to turn on/off the failure mode.
+     * @return A string indicating the current state of the failure mode.
      */
     @GetMapping("/configure/failure")
     public String configureFailure(@RequestParam boolean fail) {
         productService.setFailForCircuitBreakerTest(fail);
         return "Failure mode is now set to: " + (fail ? "ON" : "OFF");
     }
+}
 }
