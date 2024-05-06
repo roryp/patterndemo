@@ -3,13 +3,17 @@
 
 ## Description
 
-This project is a Java-based web application that provides a RESTful API for managing products. It utilizes Spring Boot for the backend, and includes features such as retrieving a product by its ID.
+# Reliable Web App Demo
 
-The application also integrates automated tests using JUnit and Mockito to ensure the reliability and correctness of its functionalities.
+## Description
 
-For caching, the project employs the cache-aside pattern and utilizes the Caffeine library to manage the cache effectively.
+This project is a Java-based web application that offers a RESTful API for managing products. It utilizes Spring Boot for backend operations and includes features such as retrieving products by their IDs.
 
-To improve system reliability, resiliency patterns such as circuit breakers and retries are implemented, enhancing the application's fault tolerance.
+The application also integrates automated tests using JUnit and Mockito to ensure the reliability and correctness of its functionality.
+
+For caching, the project employs the cache-aside pattern and utilizes the Caffeine library to effectively manage the cache.
+
+To enhance system reliability, resiliency patterns such as circuit breakers and retries are implemented, improving the application's fault tolerance.
 
 ## Prerequisites
 
@@ -27,7 +31,7 @@ git clone https://github.com/roryp/patterndemo.git
 2. Navigate to the project directory:
 
 ```bash
-cd your-repo-name
+cd patterndemo
 ```
 
 3. Install dependencies:
@@ -70,7 +74,7 @@ The application includes a feature to simulate failures, useful for testing its 
 
 ### Enabling Failures
 
-To simulate failures in the system, which will trigger the circuit breaker or retry logic, you can activate failure mode using the following URL:
+To simulate failures in the system, which will trigger the circuit breaker or retry logic, you can activate the failure mode using the following URL:
 
 ```plaintext
 http://localhost:8080/configure/failure?fail=true
