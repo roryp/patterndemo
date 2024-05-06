@@ -2,7 +2,7 @@ package com.example.demo.model;
 
 /**
  * Represents a product in the system.
- * Contains information about the product's ID, name, and description.
+ * Contains detailed information such as the product's ID, name, and description.
  */
 public class Product {
     private Long id;
@@ -13,7 +13,7 @@ public class Product {
      * Constructor for creating a new Product.
      * @param id The unique identifier for the product.
      * @param name The name of the product.
-     * @param description A brief description of the product.
+     * @param description A detailed description of the product.
      */
     public Product(Long id, String name, String description) {
         this.id = id;
@@ -54,7 +54,7 @@ public class Product {
     }
 
     /**
-     * Gets a brief description of the product.
+     * Gets a detailed description of the product.
      * @return The description of the product.
      */
     public String getDescription() {
