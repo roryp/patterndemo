@@ -1,6 +1,8 @@
 
 # Reliable Web App Demo
 
+![Reliable](reliable.gif)
+
 ## Description
 
 This project is a Java-based web application that offers a RESTful API for managing products. It utilizes Spring Boot for backend operations and includes features such as retrieving products by their IDs.
