@@ -19,4 +19,15 @@ public class DemoApplication {
         SpringApplication.run(DemoApplication.class, args);
     }
 }
+
+
+    /**
+     * Main method which launches the Spring Boot application.
+     * @param args Command line arguments passed during the start of the application.
+     */
+    public static void main(String[] args) {
+        // Run the Spring Boot application, using DemoApplication class as the configuration source.
+        SpringApplication.run(DemoApplication.class, args);
+    }
+}
 }
